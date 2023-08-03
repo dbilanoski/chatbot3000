@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>ChatBot3000</title>
+</head>
+<body>
+  <div class="chatbot-frame">
+    <main class="chatbot-interface">
+      <!-- Header -->
+      <section class="chatbot-interface-header">
+        <h1>CHATBOT 3000</h1>
+        <p class="title">For all your questions.</p>
+      </section>
+      <!-- Chat interface-->
+      <!-- Message history -->
+      <div class="chatbot-interface-messages" id="chat-messages">
+        <!-- Message item -->
+        <div class="chat-item">
+          <p class="chat-item-body sender-bot">What can I do for you?</p>
+        </div>
+      </div>
+      <!-- New message prompt -->
+      <form class="chatbot-interface-input">
+        <span class="terminal-input-symbol">> </span>
+        <input type="text" class="message-body" id="user-input" placeholder="Type here" required autocomplete="off">
+        <button type="button" id="clear-button" class="message-button">Clear chat</button>
+        <input type="submit" class="message-button" id="submit-button" value="Send">
+      </form>
+      <!-- Empty divs for screen effects -->
+      <div class="screen-lines absolute-fullscreen "></div>
+      <div class="glow absolute-fullscreen "></div>
+    </main>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <h4 class="footer-author">with 🧠️ by <a href="https://github.com/dbilanoski" title="Authors's GitHub">dbilanoski</a></h4>
+  </footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
