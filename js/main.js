@@ -1,15 +1,15 @@
 /* 
 CHATBOT LOGIC
-  * OpenAI chat completion model api is used
+  * OpenAI chat completion api with gpt-3.5-turbo model is used
     * It takes specially formatted array of objects so it's "aware" of previous conversation
 
-  * conversationArrTemplate will define the chatbod "personality" and role and will be used as a starting point on to which other conversation object will be appended
+  * conversationArrTemplate will define the chatbot "personality" and role and will be used as a starting point on to which other conversation objects will be appended
   
-  * Data will be stored to local storage so the chat data is persisted. On each conversation, local storage will be updated
+  * Data will be stored to local storage so the chat history is persisted. On each conversation, local storage will be updated
   
   * Netlify serverless function is used to store the OpenAI api key securely so fetching the chat completion will be handled by the serverless function
 
-  * Here we are fetching from the serverless function passing to it the whole conversation array and expecting it to return the new completion
+  * Here the fetching from the serverless function occurs with passing to it the whole conversation array and expecting it to return the new chat completion
 */
 
 // UI Elements
